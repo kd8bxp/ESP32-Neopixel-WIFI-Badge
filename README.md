@@ -1,19 +1,18 @@
 # ESP32 NeoPixel WIFI Badge
 
-Instructable coming soon:
-Video: https://youtu.be/Q6AULL1zWuo
-
+Instructable: https://www.instructables.com/id/ESP32X-Project-Cheerlight-Badge-Using-MQTT/  
+Video: https://youtu.be/Q6AULL1zWuo  
 
 ## Installation
-
-Required Libraries:
-PubSubClient https://github.com/knolleary/pubsubclient
-SSD1306 https://github.com/squix78/esp8266-oled-ssd1306
-
-Sketch Dependant:
-NeoPixelBus https://github.com/Makuna/NeoPixelBus
-Adafruit_NeoPixel https://github.com/adafruit/Adafruit_NeoPixel
-FastLED https://github.com/FastLED/FastLED
+  
+Required Libraries:  
+PubSubClient https://github.com/knolleary/pubsubclient  
+SSD1306 https://github.com/squix78/esp8266-oled-ssd1306  
+  
+Sketch Dependant:  
+NeoPixelBus https://github.com/Makuna/NeoPixelBus  
+Adafruit_NeoPixel https://github.com/adafruit/Adafruit_NeoPixel  
+FastLED https://github.com/FastLED/FastLED  
 
 ## Things To Do
 
