@@ -14,6 +14,11 @@ NeoPixelBus https://github.com/Makuna/NeoPixelBus
 Adafruit_NeoPixel https://github.com/adafruit/Adafruit_NeoPixel  
 FastLED https://github.com/FastLED/FastLED  
 
+## Libraries
+
+Because the Arduino IDE has been getting pretty bad handling libraries, I've included the libraries used in the src directory of the sketch. These libraries may have been slightly modified to work from the sketch directory, and do not include the examples.  
+
+
 ## Things To Do
 
 ## Usage
@@ -57,3 +62,6 @@ This program is free software: you can redistribute it and/or modify
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses>
+
+### Oct 29, 2020 added libraries, changed MQTT Broker to official Cheerlights Broker
+

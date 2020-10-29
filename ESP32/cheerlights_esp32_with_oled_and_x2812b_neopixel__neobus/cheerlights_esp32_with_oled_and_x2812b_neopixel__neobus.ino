@@ -15,20 +15,20 @@
  */
 
 #include <WiFi.h>
-#include <PubSubClient.h>
-#include "SSD1306.h" // alias for `#include "SSD1306Wire.h"`
+#include "src/PubSubClient/PubSubClient.h"
+#include "src/esp8266_ssd1306/SSD1306.h" // alias for `#include "SSD1306Wire.h"`
 #include <Wire.h>
-#include "OLEDDisplayUi.h"
-#include <NeoPixelBus.h> //https://github.com/Makuna/NeoPixelBus
+#include "src/esp8266_ssd1306/OLEDDisplayUi.h"
+#include "src/NeoPixelBus/NeoPixelBus.h" //https://github.com/Makuna/NeoPixelBus
 
 SSD1306  display(0x3c, 5, 4);
 OLEDDisplayUi ui     ( &display );
 
 // Update these with values suitable for your network.
 
-const char* ssid = "Motel6";
+const char* ssid = "";
 const char* password = "";
-const char* mqtt_server = "iot.eclipse.org";
+const char* mqtt_server = "mqtt.cheerlights.com";
 
 String color;
 int p = 25; //Neopixel delay
@@ -191,6 +191,3 @@ vTaskDelay(10);
 }
 }
 }
-
-
-

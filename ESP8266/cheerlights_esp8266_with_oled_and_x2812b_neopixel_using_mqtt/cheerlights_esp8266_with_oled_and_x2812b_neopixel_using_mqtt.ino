@@ -15,11 +15,11 @@
  */
 
 #include <ESP8266WiFi.h>
-#include <PubSubClient.h>
-#include <Adafruit_NeoPixel.h>
- #include "SSD1306.h" // alias for `#include "SSD1306Wire.h"`
+#include "src/PubSubClient/PubSubClient.h"
+#include "src/Adafruit_NeoPixel/Adafruit_NeoPixel.h"
+ #include "src/esp8266_ssd1306/SSD1306.h" // alias for `#include "SSD1306Wire.h"`
 #include <Wire.h>
-#include "OLEDDisplayUi.h"
+#include "src/esp8266_ssd1306/OLEDDisplayUi.h"
 
 SSD1306  display(0x3c, D1, D2);
 // SH1106 display(0x3c, D3, D5);
@@ -28,9 +28,9 @@ OLEDDisplayUi ui     ( &display );
 
 // Update these with values suitable for your network.
 
-const char* ssid = "Motel6";
+const char* ssid = "";
 const char* password = "";
-const char* mqtt_server = "iot.eclipse.org";
+const char* mqtt_server = "mqtt.cheerlights.com";
 
 String color;
 int brightness = 10;
@@ -196,6 +196,3 @@ delay(wait);
 }
 }
 }
-
-
-

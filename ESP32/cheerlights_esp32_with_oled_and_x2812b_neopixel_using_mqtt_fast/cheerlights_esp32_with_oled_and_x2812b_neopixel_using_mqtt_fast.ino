@@ -15,19 +15,19 @@
  */
 
 #include <WiFi.h>
-#include <PubSubClient.h>
-#include "SSD1306.h" // alias for `#include "SSD1306Wire.h"`
+#include "src/PubSubClient/PubSubClient.h"
+#include "src/esp8266_ssd1306/SSD1306.h" // alias for `#include "SSD1306Wire.h"`
 #include <Wire.h>
-#include "OLEDDisplayUi.h"
-#include "FastLED.h"
+#include "src/esp8266_ssd1306/OLEDDisplayUi.h"
+#include "src/FastLED/FastLED.h"
 
 SSD1306  display(0x3c, 5, 4);
 
 OLEDDisplayUi ui     ( &display );
 
-const char* ssid = "Motel6";
+const char* ssid = "";
 const char* password = "";
-const char* mqtt_server = "iot.eclipse.org";
+const char* mqtt_server = "mqtt.cheerlights.com";
 
 String color;
 int brightness = 10;
